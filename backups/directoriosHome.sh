@@ -2,13 +2,14 @@
 #SCRIPT BASH PARA LA AUTOMATIZACION DE BACKUPS PERSONALIZABLE
 
 #----> IMPORTANTE CAMBIAR LAS RUTAS POR LAS QUE CORRESPONDAN <----
+# recomiendo a posteriori comprimir todos los backups de nuevo en uno solo y cifrado
 
-#El siguiente comando creara un backup de todos los directorios /home del sistema 
 TPUT_BG_COLOR=$(tput setab 31)
 TPUT_RESET=$(tput sgr0)
 RED="\e[31m"
 RESET="\e[0m"
 
+#Crear un backup de todos los directorios /home del sistema 
 for x in /home/*
 do
 	users=$(echo $x | cut -d "/" -f3)
