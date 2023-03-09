@@ -6,7 +6,7 @@
 
 #El siguiente comando creara un backup del directorio raiz(/)para 
 #crear un backup de todo el sistema. Excluyendo los directorios configurados
-tar -cvpjf "/home/kali/bash/backup-`date +%d%b%y`.tar.bz2" --exclude=/proc --exclude=/lost+found --exclude=/backup-*.tar.bz2 --exclude=/mnt --exclude=/sys --exclude=/media --exclude=/var/log /home/kali/probando
+tar -cvpjf "/home/kali/bash/backup-`date +%d%b%y`.tar.bz2" --exclude=/proc --exclude=/lost+found --exclude=/backup-*.tar.bz2 --exclude=/mnt --exclude=/sys --exclude=/media /home/kali/probando
 
 echo ""
 echo "El hash en md5 del backup es: " && md5sum "/home/kali/bash/backup-`date +%d%b%y`.tar.bz2"
