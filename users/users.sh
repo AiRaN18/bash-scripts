@@ -18,6 +18,7 @@ do
 	else
 		echo "Creando el usuario $x..."
 		useradd -m $x
+		chown $x:$x /home/$x
 		#mensaje de bienvenida cuando inicie sesion
 		echo "echo Hola $x! Bienvenido!" >> /home/$x/.bashrc
 	fi
