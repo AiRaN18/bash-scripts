@@ -20,7 +20,7 @@ En que punto y por que está fallando el script.
 6) Seguir un criterio nemotécnico nos puede ayudar a programar con más facilidad. Por ejemplo, podemos decidir que todas las variables serán nombradas con 3 carácter.
 
 Debug mode:
-  sh -x script.sh 
-  bash -n script.sh(syntaxys check)
-  set -u( inside the script it will detect syntaxis errors)
+sh -x script.sh 
+bash -n script.sh(syntaxys check)
+set -u( inside the script it will detect syntaxis errors)
   
