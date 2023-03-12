@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Crear directorios o borrarlos con lista pasada en $2
+#Util si necesitamos crear 200 directorios iguales en muchos sistemas/Its very useful if we need to make 200 dirs on a lot of systems
 clear
 echo "Escribe Make or Delete y recuerda pasar la lista en $ X1 de los directorios: "
 
